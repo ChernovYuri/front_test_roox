@@ -1,0 +1,50 @@
+.sidebar {
+  width: 150px;
+  padding: 35px 20px;
+  background-color: #BDBDBD;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: auto;
+  min-height: 100vh;
+
+  .sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+
+    .sortTitle {
+      font-size: 12px;
+    }
+
+    .sortButtons {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+  }
+
+
+  .sidebarButton {
+    background-color: #4b51ef;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .sidebarButton.active {
+    background-color: #000358;
+  }
+
+  .sidebarButton.active:hover {
+    background-color: #000374;
+  }
+
+  .sidebarButton:hover {
+    background-color: #3867d6;
+  }
+}

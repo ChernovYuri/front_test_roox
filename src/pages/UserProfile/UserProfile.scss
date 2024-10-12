@@ -1,0 +1,48 @@
+.userProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+
+  .profileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    &__title {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .button {
+      color: white;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &.cancel {
+        background-color: #bb0000;
+        color: white;
+
+        .edit:hover {
+          background-color: #b10000;
+        }
+
+        &:hover {
+          background-color: #9a0000;
+        }
+      }
+
+      &.edit {
+        background-color: #4B51EF;
+        color: white;
+      }
+
+      .edit:hover {
+        background-color: #3867d6;
+      }
+    }
+  }
+}
